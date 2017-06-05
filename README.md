@@ -23,7 +23,7 @@ Create a new Complex number:
   var result = number1.mul(number2);
   
   // Division
-  var result = number1.div(number2); (number1/number2)
+  var result = number1.div(number2); // number1/number2
   
   // Module
   var module = number3.abs();
