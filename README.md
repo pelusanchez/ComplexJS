@@ -17,10 +17,13 @@ Create a new Complex number:
   var result = number1.add(number2);
   
   // Subtract number1 from number2
-  var result = number1.subs(number2);
+  var result = number1.sub(number2);
   
   // Product
   var result = number1.mul(number2);
+  
+  // Division
+  var result = number1.div(number2); (number1/number2)
   
   // Module
   var module = number3.abs();
@@ -35,7 +38,7 @@ Create a new Complex number:
 - [x] Addition
 - [x] Subtraction
 - [x] Multiplication
-- [ ] Division
+- [x] Division
 - [x] Module
 - [x] Angle
 
@@ -44,4 +47,12 @@ Create a new Complex number:
 - [x] Exponent
 - [x] Sin
 - [x] Cos
-- [ ] Tan
+- [x] Tan
+- [ ] Sinh
+- [ ] Cosh
+- [ ] Tanh
+- [ ] Log
+
+### More utilities:
+- [ ] Complex Array Operations
+- [ ] Complex Matrix Operations
