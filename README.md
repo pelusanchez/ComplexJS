@@ -32,16 +32,16 @@ Create a new Complex number:
 ## To Do
 
 ### Basic operations
-[x] Addition
-[x] Subtraction
-[x] Multiplication
-[ ] Division
-[x] Module
-[x] Angle
+- [x] Addition
+- [x] Subtraction
+- [x] Multiplication
+- [ ] Division
+- [x] Module
+- [x] Angle
 
 ### Functions
-[x] Pow
-[x] Exponent
-[x] Sin
-[x] Cos
-[ ] Tan
+- [x] Pow
+- [x] Exponent
+- [x] Sin
+- [x] Cos
+- [ ] Tan
