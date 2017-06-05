@@ -74,6 +74,18 @@ Complex.prototype.mul = function(cmplx){
 	}
 }
 
+Complex.prototype.div = function(cmplx){	// this/cmplx
+	if(cmplx.constructor.name === "Complex"){
+		var _d = cmplx.re*cmplx.re+cmplx.im*cmplx.im;
+
+		return new Complex({re: (this.real()*cmplx.re+this.imag()*cmplx.im)/_d, im: (this.imag()*cmplx.re-this.real()*cmplx.im)/_d});
+	}else{
+		if(cmplx.constructor.name === "Number"){
+			return new Complex({re: (this.real()/cmplx), im: (this.imag()/cmplx)});
+		}
+	}
+}
+
 Complex.exp = function(cmplx){
 	if(cmplx.constructor.name === "Complex"){
 		var a = Math.exp(cmplx.re);
@@ -93,6 +105,10 @@ Complex.cos = function(cmplx){
 	return new Complex({re: Math.cos(cmplx.re)*Math.cosh(cmplx.im), im: Math.sin(cmplx.re)*Math.sinh(cmplx.im)});
 }
 
+Complex.tan = function(cmplx){
+	return Complex.sin(cmplx).div(Complex.cos(cmplx));
+}
+
 Complex.prototype.abs = function(){
 	return Math.sqrt(this.imag()*this.imag()+this.real()*this.real());
 }
@@ -108,6 +124,8 @@ Complex.analiza = function(number){
 
 }
 
+
+//TODO: Complex Array Operations
 Complex.array = function(N){
 	var __array = {};
 	for(var i = 0; i<N; i++){
