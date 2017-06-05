@@ -102,7 +102,7 @@ Complex.sin = function(cmplx){
 }
 
 Complex.cos = function(cmplx){
-	return new Complex({re: Math.cos(cmplx.re)*Math.cosh(cmplx.im), im: Math.sin(cmplx.re)*Math.sinh(cmplx.im)});
+	return new Complex({re: Math.cos(cmplx.re)*Math.cosh(cmplx.im), im: -Math.sin(cmplx.re)*Math.sinh(cmplx.im)});
 }
 
 Complex.tan = function(cmplx){
