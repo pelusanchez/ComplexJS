@@ -56,3 +56,7 @@ Create a new Complex number:
 ### More utilities:
 - [ ] Complex Array Operations
 - [ ] Complex Matrix Operations
+
+### Optimization
+
+- [ ] Object and operations optimization.
