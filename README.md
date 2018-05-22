@@ -3,7 +3,13 @@ Complex numbers in JavaScript.
 
 ## Set up
 
-Include the *complex.js* file in your JavaScript project. Then you will be able to use the Complex Numbers Library.
+Include *Complex.js* file in your JavaScript project:
+
+```
+<script type="text/javascript" src="Complex.js"></script>
+```
+
+Then you will be able to use the Complex Numbers Library.
 
 ## Use
 
